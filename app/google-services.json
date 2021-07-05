@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "565571837362",
+    "project_id": "qrteach",
+    "storage_bucket": "qrteach.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:565571837362:android:57fd3d9d9fa903085b58ab",
+        "android_client_info": {
+          "package_name": "com.example.qrteach"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "565571837362-960ipqntkhm5558p0fre1blnjuc36sdl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCK-JfWNNIEifiG1ivIJaggCiuqbPog16E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "565571837362-960ipqntkhm5558p0fre1blnjuc36sdl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

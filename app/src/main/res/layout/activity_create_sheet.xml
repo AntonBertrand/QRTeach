@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateSheet"
+    android:background="#575555">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginEnd="56dp"
+            android:layout_marginBottom="2dp"
+            android:text="CANCEL"
+            android:textSize="24sp"
+            app:backgroundTint="#272727"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/msgBtn" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="63dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="274dp"
+            android:layout_marginBottom="10dp"
+            android:text="Instructions"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/worksheetInstructions"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/worksheetSummary" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="63dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="288dp"
+            android:layout_marginBottom="10dp"
+            android:text="Summary"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/worksheetSummary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/worksheetName" />
+
+        <EditText
+            android:id="@+id/links"
+            android:layout_width="301dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="58dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="57dp"
+            android:layout_marginBottom="5dp"
+            android:background="#F4F3F3"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Enter Relevant Links"
+            android:inputType="textMultiLine"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/msgBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <EditText
+            android:id="@+id/worksheetInstructions"
+            android:layout_width="297dp"
+            android:layout_height="118dp"
+            android:layout_marginStart="58dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="58dp"
+            android:layout_marginBottom="3dp"
+            android:background="#F4F3F3"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Enter Worksheet Instructions"
+            android:inputType="textMultiLine"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <Button
+            android:id="@+id/msgBtn"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="46dp"
+            android:layout_marginEnd="47dp"
+            android:text="CREATE QR CODE"
+            android:textSize="24sp"
+            app:backgroundTint="#272727"
+            app:layout_constraintBottom_toTopOf="@+id/cancel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/links" />
+
+        <EditText
+            android:id="@+id/worksheetName"
+            android:layout_width="301dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="58dp"
+            android:layout_marginTop="85dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginBottom="8dp"
+            android:background="#F4F3F3"
+            android:ems="10"
+            android:hint="Enter Worksheet Name"
+            android:inputType="textPersonName"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toTopOf="@+id/textView6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/worksheetSummary"
+            android:layout_width="288dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="59dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginBottom="3dp"
+            android:background="#F4F3F3"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Enter Worksheet Summary"
+            android:inputType="textMultiLine"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="63dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="257dp"
+            android:layout_marginBottom="10dp"
+            android:text="Relevant Links"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/links"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/worksheetInstructions" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/appbar"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</RelativeLayout>
